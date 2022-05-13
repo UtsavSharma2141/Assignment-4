@@ -1,0 +1,15 @@
+#File: daytime@.service
+#Author: Utsav Sharma
+
+[Unit]
+Description=Defining routine for daytime service
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Environment="TZ=Japan"
+WorkingDirectory=/home/ceng320
+ExecStart=/usr/bin/java CommandServer 
+StandardInput=socket
+User=ceng320

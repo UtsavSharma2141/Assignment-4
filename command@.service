@@ -1,0 +1,14 @@
+#file: command@.service
+#Author: Utsav Sharma
+[Unit]
+description=defining routine for the command service
+
+[Install]
+WantedBy=default.target
+
+[Service]
+WorkingDirectory=/home/ceng320
+ExecStart=/usr/bin/java StubServer
+StandardOutput=socket
+StandardInput=socket
+User=ceng320

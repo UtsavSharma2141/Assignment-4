@@ -1,0 +1,11 @@
+#File: command.socket
+#Author: Utsav Sharma
+[Unit]
+Description=Implementing the stub commands
+
+[Socket]
+ListenStream=8005
+Accept=yes
+
+[Install]
+WantedBy=default.target

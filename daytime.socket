@@ -1,0 +1,11 @@
+#File: daytime.socket
+#Author: Utsav Sharma
+[Unit]
+Description=Implementing the daytime service
+
+[Socket]
+ListenStream=13
+Accept=yes
+
+[Install]
+WantedBy=default.target
